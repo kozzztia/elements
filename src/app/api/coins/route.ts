@@ -18,7 +18,7 @@ async function readCoinsFromFile() {
 }
 
 
-export async function GET(req : Request , res : Response) {
+export async function GET() {
   try {
     const coins = await readCoinsFromFile();
     return NextResponse.json({ coins }, { status: 200 });

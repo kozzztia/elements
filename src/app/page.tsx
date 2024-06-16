@@ -19,7 +19,6 @@ if (!res.ok) {
 
 const data = await res.json();
 const coins = data.coins;
-  // console.log(coins)
   return (
     <>
       <header className={styles.header}>
