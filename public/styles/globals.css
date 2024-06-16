@@ -1,0 +1,69 @@
+:root {
+  /*page sizes */
+  --max-width: 1100px;
+  --header-height: 100px;
+  --main-height: calc(100vh - var(--header-height));
+
+  /* fonts */
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    /* sizes */
+  --text-size: 20px;
+  --title-size: 25px;
+  --main-padding :10px;
+  --element-padding : 5px;
+    /* constants colors */
+    --main-color: #FFF;
+    /* color */
+  --main-bg-color: #ce5a57;
+  
+  --element-color: #78a5a3;
+  --element-bg-color: #444c5c;
+
+  --decoration-color: #e1b16a;
+
+  --shadow: inset 0 0 10px 0 var(--decoration-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #07575b;
+
+
+    --element-color: #66a5ad;
+    --element-bg-color: #003b46;
+  
+    --decoration-color: #C4dfe6;
+
+    --shadow: inset 0 0 10px 0 var(--decoration-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--main-color);
+  background: var(--main-bg-color);
+  font-family: var(--font-mono);
+  font-size: var(--text-size);
+  font-weight: 600;
+  line-height: var(--text-size);
+  letter-spacing: 1px;
+  max-width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}

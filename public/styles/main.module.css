@@ -1,0 +1,18 @@
+.header,.main{
+  width: 100%;
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+  padding: var(--main-padding);
+  /* box-shadow: var(--shadow); */
+  background-color: var(--element-bg-color);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.header{
+  height: var(--header-height);
+}
+.main{
+  height: var(--main-height);
+}
